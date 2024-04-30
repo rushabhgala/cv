@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -78,8 +78,8 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -116,7 +116,7 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Rushabh Gala} \\[7.5pt]
+\huge{Rushabh Gala} \\[3pt]
 \href{https://github.com/rushabhgala}{\raisebox{-0.05\height}\faGithub\ rushabhgala} \ $|$ \ 
 \href{https://linkedin.com/in/rushabh-gala-b680b4149/}{\raisebox{-0.05\height}\faLinkedin\ rushabh-gala-b680b4149} \ $|$ \ 
 %\href{https://rushabh.space}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
@@ -129,51 +129,59 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-%I have received specialized training in analyzing and modeling complex data through the use of Monte Carlo simulations and assay-based measurements. Additionally, I have worked effectively as a member of a large, interdisciplinary team of over 100 collaborators, and have honed my skills in presenting findings to both expert and non-expert audiences.
-Collaborative, analytical thinker and problem solver with experience in modeling and analyzing large, complex data through the use of Monte Carlo simulations and communicating the results to expert and non-expert audiences. 
+%\section{Summary}
+%Experienced data analyst with a strong background in large-scale data analysis, visualization, modeling, and Monte Carlo simulations. Proficient in interpreting complex datasets and communicating findings to diverse audiences.
+%Experienced data analyst proficient in conducting independent research, with a strong track record of delivering insightful findings and solutions. Skilled in analyzing large datasets, employing sophisticated modeling techniques, and communicating results effectively to diverse audiences.
 %Experience
 \section{Experience}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{North Carolina State University} &Raleigh, NC \hfill 2018 - Present \\[3.75pt]
+\textbf{North Carolina State University} & Raleigh, NC \hfill 2018 - Present \\[3pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] \textbf{Analyzed and modeled} background radiation for LEGEND experiment using Monte Carlo simulation data and reduced contamination by about a \textbf{factor of 100} and presented the results in national and international conferences.
-        \item[--] Co-managed a small team to a successful simulation campaign to fit the data using \textbf{Poissonian likelihood function} and presented the results at TAUP-2023 conference.
-        \item[--] Implemented statistical tools such as \textbf{regression and non linear fitting} to estimate the age of brazil nuts using radioactive isotope decay techniques with a 5\% error margin.
-        \item[--] Mentored a student on a study to determine the difference in simulation efficiency between the implementation of CAD-based geometry and natively built G4 solid-based geometry in Geant4.
-        %\item[--] Presented the background contamination results at the yearly LEGEND collaborators' meeting.
-        %\item[--] Presented a poster talk at \textbf{Neutrino-2022} conference.
-        %\item[--] Delivered oral and poster talks at \textbf{APS-DNP 2021}, \textbf{APS-DNP 2020}, \textbf{Neutrino-2022} and \textbf{TAUP-2023} conference.
-        
-    \end{itemize}
-    \end{minipage}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+\item[--] \textbf{Led data analysis and modeling} efforts to understand background radiation patterns for the LEGEND experiment, resulting in a significant contamination reduction by a \textbf{factor of 100}. Presented findings at national and international conferences, contributing to the advancement of nuclear physics research.
+\item[--] Utilized \textbf{statistical techniques}, including \textbf{Bayesian statistics}, to perform intricate simulations and analyze large datasets, maximizing Poissonian likelihood functions. Presented results at the prestigious TAUP-2023 conference, receiving recognition for groundbreaking research.
+\item[--] \textbf{Developed custom software} in C++ to calculate photon detection probabilities in a light-sensitive SiPM detector, originating from radioactive decays in Liquid Argon. The software facilitated precise experimental planning and analysis, ensuring accurate results.
+\item[--] \textbf{Planned, developed, and executed} a Geant4-based custom software to build a complex system with more than 1000 detectors with mm precision. Conducted precise Monte Carlo simulations of radioactive decays to determine radioactive contamination and performed rigorous analysis to meet the ambitious objective of achieving \textbf{$<$ 1 count of background noise in 10 years of data}.
+\item[--] Implemented \textbf{regression and non-linear fitting} methods to estimate the age of Brazil nuts using radioactive decay techniques, achieving a remarkable 5\% error margin. Published results in peer-reviewed journals, showcasing scientific rigor and expertise.
+\item[--] Developed sophisticated Python and C++ tools to meticulously design the layout of detectors, optical fibers, and ancillary materials for our experiment. Collaborated closely with the engineering team to define spatial constraints, ensuring seamless integration.
+\item[--] Provided \textbf{expert guidance} on data analysis and interpretation to a student investigating simulation efficiency differences between CAD-based and solid-based geometry implementations in Geant4. The results of our collaboration were pivotal in determining the optimal approach for future simulations, significantly enhancing experimental efficiency and accuracy.
+\end{itemize}
+\end{minipage}
 }
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Tata Institute of Fundamental Research} &Mumbai, India \hfill 2017 - 2018 \\[3.75pt]
+\textbf{Tata Institute of Fundamental Research} & Mumbai, India \hfill 2017 - 2018 \\[3pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Analyzed data from an accelerator based experiment which led to the discovery of novel energy levels in a nucleus
-        \item[--] Presented an oral talk and won a \textbf{first prize} at Science Academies’ Refresher’s Course on Mathematical Physics
-    \end{itemize}
-    \end{minipage}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+\item[--] Conducted in-depth \textbf{data analysis} of experimental results from an accelerator-based experiment, leading to the discovery of novel energy levels in the $^{90}Zr$ nucleus. Published findings in renowned scientific journals, contributing significantly to the field of nuclear physics.
+\item[--] Implemented \textbf{advanced non-linear fitting techniques} to determine the lifetime of an isomeric state using slow-fast coincidence methodology. Managed large datasets with meticulous attention to detail, ensuring accurate results and data integrity.
+\item[--] Optimized the voltage response of semiconductor and plastic detectors, improving energy resolution by \textbf{10\%} and enhancing experimental precision. Presented research findings at national and international conferences, receiving accolades for outstanding contributions to the field.
+\item[--] Delivered an engaging \textbf{oral presentation} and won a prestigious \textbf{first prize} at the Science Academies’ Refresher’s Course on Mathematical Physics, showcasing exemplary communication and presentation skills.
+\end{itemize}
+\end{minipage}
 }
 \end{tabularx}
-
-
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Relevant Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming Skills &  \normalsize{C++, Python, Bash, Julia, Mathematica}\\
+Technical Skills & \normalsize{Linux, Git, Docker, JSON, snakemake Office Suite, Tableau, Grid computing}\\
+%Technical Skills  &  \normalsize{Data analysis, modeling, visualization, and presentation}\\
+Interpersonal Skills  &  \normalsize{Course Instructor : Undergraduate physics courses, APS Student Ambassador, Events Head: Indian Graduate Student Association, Public Relations Team}
+\end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-PhD in Physics & \textbf{NC State University}, GPA: 3.52/4.0 \hfill 2018-Present \\
-Master's in Physics & \textbf{University of Mumbai}, GPA: 9.13/10.0 \hfill 2015-2017 \\ 
-Bachelor's in Physics & \textbf{Ramnarain Ruia College}, GPA: 6.89/7.0 \hfill  2012-2015 \\
-
+PhD in Physics & \textbf{NC State University} \hfill 2018-Present \\
+Master's in Physics & \textbf{University of Mumbai} \hfill 2015-2017 \\ 
+Bachelor's in Physics & \textbf{Ramnarain Ruia College} \hfill  2012-2015 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,17 +192,6 @@ Bachelor's in Physics & \textbf{Ramnarain Ruia College}, GPA: 6.89/7.0 \hfill  2
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Relevant Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Technical Skills &  \normalsize{C++, Python(NumPy, Pandas, SciPy), JSON, Git, Docker, Office Suite, Tableau, Linux shell, Grid computing}\\
-%Technical Skills  &  \normalsize{Data analysis, modeling, visualization, and presentation}\\
-Interpersonal Skills  &  \normalsize{\textbf{APS Student Ambassador} (communication, leadership skills), \newline \textbf{Events Head : Indian Graduate Student Association} (organizational, management skills), \textbf{Public Relations Team} (marketing, team building skills)}\\
-\end{tabularx}
-
 \vfill
 
 \end{document}
