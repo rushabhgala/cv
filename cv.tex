@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -58,7 +58,7 @@
 
 %tabularx environment
 \usepackage{tabularx}
-
+\usepackage{amsmath}
 %for lists within experience section
 \usepackage{enumitem}
 
@@ -117,10 +117,11 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \huge{Rushabh Gala} \\[3pt]
-\href{https://github.com/rushabhgala}{\raisebox{-0.05\height}\faGithub\ rushabhgala} \ $|$ \ 
+\href{mailto:rngala@ncsu.edu}{\raisebox{-0.05\height}\faEnvelope\ rngala@ncsu.edu} \ $|$ \
+%\href{https://github.com/rushabhgala}{\raisebox{-0.05\height}\faGithub\ rushabhgala} \ $|$ \ 
 \href{https://linkedin.com/in/rushabh-gala-b680b4149/}{\raisebox{-0.05\height}\faLinkedin\ rushabh-gala-b680b4149} \ $|$ \ 
 %\href{https://rushabh.space}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
-\href{mailto:rngala@ncsu.edu}{\raisebox{-0.05\height}\faEnvelope \ rngala@ncsu.edu} \\ 
+\href{https://github.com/rushabhgala}{\raisebox{-0.05\height}\faGithub \ rushabhgala} \\ 
 %\href{tel:+1-919-633-6594}{\raisebox{-0.05\height}\faMobile \ +1-919-633-6594} \\
 \end{tabularx}
 
@@ -133,61 +134,73 @@
 %Experienced data analyst with a strong background in large-scale data analysis, visualization, modeling, and Monte Carlo simulations. Proficient in interpreting complex datasets and communicating findings to diverse audiences.
 %Experienced data analyst proficient in conducting independent research, with a strong track record of delivering insightful findings and solutions. Skilled in analyzing large datasets, employing sophisticated modeling techniques, and communicating results effectively to diverse audiences.
 %Experience
-\section{Experience}
+\section{\textbf{EXPERIENCE}}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{North Carolina State University} & Raleigh, NC \hfill 2018 - Present \\[3pt]
+\textbf{Data Scientist Assistant} &North Carolina State University, Raleigh, NC \hfill 2021 - Present \\[3pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
-\item[--] \textbf{Led data analysis and modeling} efforts to understand background radiation patterns for the LEGEND experiment, resulting in a significant contamination reduction by a \textbf{factor of 100}. Presented findings at national and international conferences, contributing to the advancement of nuclear physics research.
-\item[--] Utilized \textbf{statistical techniques}, including \textbf{Bayesian statistics}, to perform intricate simulations and analyze large datasets, maximizing Poissonian likelihood functions. Presented results at the prestigious TAUP-2023 conference, receiving recognition for groundbreaking research.
-\item[--] \textbf{Developed custom software} in C++ to calculate photon detection probabilities in a light-sensitive SiPM detector, originating from radioactive decays in Liquid Argon. The software facilitated precise experimental planning and analysis, ensuring accurate results.
-\item[--] \textbf{Planned, developed, and executed} a Geant4-based custom software to build a complex system with more than 1000 detectors with mm precision. Conducted precise Monte Carlo simulations of radioactive decays to determine radioactive contamination and performed rigorous analysis to meet the ambitious objective of achieving \textbf{$<$ 1 count of background noise in 10 years of data}.
-\item[--] Implemented \textbf{regression and non-linear fitting} methods to estimate the age of Brazil nuts using radioactive decay techniques, achieving a remarkable 5\% error margin. Published results in peer-reviewed journals, showcasing scientific rigor and expertise.
-\item[--] Developed sophisticated Python and C++ tools to meticulously design the layout of detectors, optical fibers, and ancillary materials for our experiment. Collaborated closely with the engineering team to define spatial constraints, ensuring seamless integration.
-\item[--] Provided \textbf{expert guidance} on data analysis and interpretation to a student investigating simulation efficiency differences between CAD-based and solid-based geometry implementations in Geant4. The results of our collaboration were pivotal in determining the optimal approach for future simulations, significantly enhancing experimental efficiency and accuracy.
+\item[$\bullet$] Developed an advanced data cleaning and reduction pipeline that compressed simulated data by 66\%, significantly accelerating processing times.
+\item[$\bullet$] Incorporated statistical techniques, including Bayesian statistics, to perform intricate simulations and analyze large datasets, maximizing Poissonian likelihood functions with an uncertainty of less than 10\%.
+\item[$\bullet$] Led the modeling team to understand background radiation for the LEGEND-1000 experiment, predicting a significant noise reduction by a factor of 100.
+\item[$\bullet$] Implemented regression and non-linear fitting methods to estimate the age of Brazil nuts using radioactive decay techniques, achieving a remarkable 0.1\% error margin. 
+\item[$\bullet$] Implemented predictive modeling to determine the probability of light detection in our detectors.
 \end{itemize}
 \end{minipage}
 }
 \end{tabularx}
 
+\hrule
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Tata Institute of Fundamental Research} & Mumbai, India \hfill 2017 - 2018 \\[3pt]
+\textbf{Software Research Assistant} &North Carolina State University, Raleigh, NC \hfill 2019 - 2021 \\[3pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
-\item[--] Conducted in-depth \textbf{data analysis} of experimental results from an accelerator-based experiment, leading to the discovery of novel energy levels in the $^{90}Zr$ nucleus. Published findings in renowned scientific journals, contributing significantly to the field of nuclear physics.
-\item[--] Implemented \textbf{advanced non-linear fitting techniques} to determine the lifetime of an isomeric state using slow-fast coincidence methodology. Managed large datasets with meticulous attention to detail, ensuring accurate results and data integrity.
-\item[--] Optimized the voltage response of semiconductor and plastic detectors, improving energy resolution by \textbf{10\%} and enhancing experimental precision. Presented research findings at national and international conferences, receiving accolades for outstanding contributions to the field.
-\item[--] Delivered an engaging \textbf{oral presentation} and won a prestigious \textbf{first prize} at the Science Academies’ Refresher’s Course on Mathematical Physics, showcasing exemplary communication and presentation skills.
+\item[$\bullet$] Planned, developed, and executed a framework to conduct precise Monte Carlo simulations of radioactive decays to meet the objective of achieving $<$ 1 count of background noise in 10 years of data.
+\item[$\bullet$] Spearheaded the development of a custom software to calculate photon detection probabilities provided consultancy to the engineering team improving the sensitivity by a factor of 2.
+\item [$\bullet$] Developed methods to optimize and automate the production of optical maps to produce reducing computation time from weeks to just one day.
 \end{itemize}
 \end{minipage}
 }
 \end{tabularx}
+
+\hrule
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Research Assistant} &North Carolina State University, Raleigh, NC \hfill 2018 - 2021 \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+\item[$\bullet$] Provided \textbf{expert guidance} on data analysis and interpretation,  enhancing simulation efficiency and accuracy by 33\%.
+\item[$\bullet$] Mentored a student in comparing the efficiency of simulations using GEANT4-based and CAD-based geometries, resulting in optimized methodologies for future experiments.
+\end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Relevant Skills}
+\section{\textbf{SKILLS}}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 Programming Skills &  \normalsize{C++, Python, Bash, Julia, Mathematica}\\
-Technical Skills & \normalsize{Linux, Git, Docker, JSON, snakemake Office Suite, Tableau, Grid computing}\\
+Technical Skills & \normalsize{Linux, Git, Docker, JSON, Grid computing, Snakemake, Office Suite, Tableau, Power BI, Data Analysis, Data visualization, Geant4, ROOT, SRIM, TRIM}\\
 %Technical Skills  &  \normalsize{Data analysis, modeling, visualization, and presentation}\\
-Interpersonal Skills  &  \normalsize{Course Instructor : Undergraduate physics courses, APS Student Ambassador, Events Head: Indian Graduate Student Association, Public Relations Team}
+Interpersonal Skills  &  \normalsize{Undergraduate Course Instructor, Student mentoring, APS Student Ambassador, Events Head: Indian Graduate Student Association, Co-Head: Public Relations Team}
 \end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
+\section{\textbf{EDUCATION}}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-PhD in Physics & \textbf{NC State University} \hfill 2018-Present \\
-Master's in Physics & \textbf{University of Mumbai} \hfill 2015-2017 \\ 
-Bachelor's in Physics & \textbf{Ramnarain Ruia College} \hfill  2012-2015 \\
+PhD in Nuclear Physics & NC State University \hfill Aug 2018 - Dec 2024 \\
+Master's in Physics & University of Mumbai \hfill Aug 2015 - May 2017 \\ 
+Bachelor's in Physics & Ramnarain Ruia College \hfill  Aug 2012 - May 2015 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SELECTED PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Selected Publications}
+\section{\textbf{SELECTED PUBLICATIONS}}
 \begin{refsection}[citations.bib]
 \nocite{*}
 \printbibliography[heading=none]
